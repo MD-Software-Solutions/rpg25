@@ -1,4 +1,4 @@
-import { canvas, player, c, camera, scale } from "./globals.js"
+import { canvas, player, c, camera, scale, projectiles } from "./globals.js"
 
 
 
@@ -13,6 +13,15 @@ function animate() {
     // camera.y = player.position.y - centerOffsetY
 
     player.update()
+
+    for (let i = projectiles.length - 1; i >= 0; i--) {
+        projectiles[i].update()
+    
+        if (projectiles[i].shouldDestroy) {
+            projectiles.splice(i, 1)
+        }
+    }
+    
     
 }
 

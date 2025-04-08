@@ -35,11 +35,12 @@ export class Player extends Sprite {
         this.height = 64
         this.image = new Image()
         this.image.src = './gameAssets/wizard/wizard_idle.png'
-        this.lastDirection = 'l'
+        this.lastDirection = 'Left'
         this.currentFrameH = currentFrameH
         this.hitbox
         this.animations = animations
         this.preventInput = false
+    
 
         setTimeout(() => {
             this.switchSprite('idleRight')
@@ -99,36 +100,36 @@ export class Player extends Sprite {
         if (keys.w.pressed) {
             this.switchSprite('walkUp')
             this.velocity.y = -this.velConst
-            this.lastDirection = 'w'
+            this.lastDirection = 'Up'
         } 
         
         if (keys.s.pressed) {
             this.switchSprite('walkDown')
             this.velocity.y = this.velConst
-            this.lastDirection = 's'
+            this.lastDirection = 'Down'
         } 
          
         if (keys.a.pressed) {
             console.log("yes")
             this.switchSprite('walkLeft')
             this.velocity.x = -this.velConst
-            this.lastDirection = 'l'
+            this.lastDirection = 'Left'
         } 
         
         if (keys.d.pressed) {
             this.switchSprite('walkRight')
             this.velocity.x = this.velConst
-            this.lastDirection = 'r'
+            this.lastDirection = 'Right'
         } 
 
         if (!keys.w.pressed && !keys.s.pressed) {
             this.velocity.y = 0
 
-            if (this.lastDirection === 's') {
+            if (this.lastDirection === 'Down') {
                 this.switchSprite('idleDown')
             }
 
-            if (this.lastDirection === 'w') {
+            if (this.lastDirection === 'Up') {
                 this.switchSprite('idleUp')
             }
         }
@@ -136,11 +137,11 @@ export class Player extends Sprite {
         if (!keys.a.pressed && !keys.d.pressed) {
             this.velocity.x = 0
 
-            if (this.lastDirection === 'l') {
+            if (this.lastDirection === 'Left') {
                 this.switchSprite('idleLeft')
             }
 
-            if (this.lastDirection === 'r') {
+            if (this.lastDirection === 'Right') {
                 this.switchSprite('idleRight')
             }
         }

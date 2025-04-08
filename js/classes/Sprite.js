@@ -5,8 +5,8 @@ export class Sprite {
         imageSrc,
         loop = true,
         animations = null,
-        frameRate = null,
-        frameRateH = null,
+        frameRate = 0,
+        frameRateH = 0,
         frameBuffer = 0,
         autoplay = true,
         position
@@ -56,7 +56,6 @@ export class Sprite {
           height: this.height,
       }
 
-      // 👇 Apply camera offset here
       c.drawImage(
           this.image,
           cropbox.position.x,
