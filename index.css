@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300&family=Press+Start+2P&display=swap');
+
+html, body {
+    scrollbar-gutter: stable both-edges;
+}
+
+body {
+    background: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    /* align-items: center;  */
+    height: 100vh;
+    margin: 0;
+    user-select: none;
+    overflow-y: overlay;
+    overflow-y: auto;
+}
+
+.home-container {
+    color: white;
+    font-family: 'Press Start 2P', system-ui;
+    /* border: solid 3px white; */
+    padding: 40px;
+    border-radius: 1em;
+    
+    /* justify-content: center;
+    align-items: center; */
+}
+
+#main-title-text {
+    color: rgb(176, 180, 183);
+    font-size: 130px;
+    margin-top: 125px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#main-title-text:hover {
+    transform: scale(1.1) rotate(-10deg);
+    color: #dedede;
+    cursor: default;
+}
+
+#subtitle-title-text {
+    color: rgb(176, 180, 183);
+    font-size: 35px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.play-btn {
+    
+
+    display: block; 
+    margin: 0 auto;
+    font-family: 'Press Start 2P', system-ui;
+    font-size: 15px;
+    padding: 10px;
+    background-color: rgb(176, 180, 183);
+    border-radius: 1em;
+    transition: all .2s ease;
+
+}   
+.go-home-btn {
+    display: block; 
+    margin: 0 auto;
+    font-family: 'Press Start 2P', system-ui;
+    font-size: 15px;
+    background-color: rgb(176, 180, 183);
+    border-radius: 1em;
+    transition: all .2s ease;
+    top: 10px;
+    left: 0;
+    position: absolute;
+    padding: 10px 15px;
+
+}
+
+.play-btn:hover, .go-home-btn:hover {
+    background-color: #fff;
+    font-size: 85%;
+}
+
+
+.pd-20 {
+    padding: 1px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-btn-frame {
+    display: flex;
+    justify-content: center;
+    padding: 2  0px;
+
+}
+
+.pd-10 {
+    padding: 10px;
+}
+
+#credits-box {
+    color: #b0b4b7;
+    text-align: center;
+    /* border: solid #b0b4b7 5px; */
+    padding: 25px;
+    border-radius: 1em;
+}
+
+.credits-wrapper {
+    padding-inline: 0;
+}
+
+.accordion {
+    width: 100%;
+    font-family: 'Press Start 2P', system-ui;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.accordion-item {
+    margin-top: 10px;
+    border-radius: 1em;
+}
+.accordion-header {
+    width: 100%;
+    font-family: 'Press Start 2P', system-ui;
+    text-align: left;
+    font-size: 25px;
+    
+    padding: 20px;
+    background-color: #b0b4b7;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    text-align: left;
+    line-height: 2;
+    font-size: 15px;
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid #ddd;
+    padding-inline: 20px;
+    border-top: none;
+}
+
+.accordion-content li {
+    margin-bottom: 20px;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e; /* Background of the scrollbar track */
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b0b4b7; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Optional: Rounded corners */
+    border: 2px solid #1e1e1e; /* Optional: Adds a border around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #dedede; /* Color when hovered */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    #main-title-text {
+        font-size: 100px;
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    #subtitle-title-text {
+        font-size: 30px;
+    }
+
+    .play-btn {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .accordion-header {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .accordion-content {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    #main-title-text {
+        font-size: 80px;
+        margin-top: 80px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+
+    #subtitle-title-text {
+        font-size: 25px;
+    }
+
+    .play-btn {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .accordion-header {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .accordion-content {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    #main-title-text {
+        font-size: 60px;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    #subtitle-title-text {
+        font-size: 20px;
+    }
+
+    .play-btn {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .accordion-header {
+        font-size: 10px;
+        padding: 8px;
+    }
+
+    .accordion-content {
+        font-size: 10px;
+    }
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ccc;
+    border: 5px solid #fff;
+    border-radius: 1em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+.popup-content button {
+    font-family: 'Press Start 2P', system-ui;
+    margin: 5px;
+    font-size: 10px;
+    padding: 10px;
+}

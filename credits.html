@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rpg 25</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="home-container">
+        <div id="main-title-text">
+            Credits
+        </div>
+        <div class="credits-wrapper">
+            <div id="credits-box">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            Sprite Design
+                        </button>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Sprites by: Johannes Sjölund (wulax), Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Nila122, David Conway Jr. (JaidynReiman), Carlo Enrico Victoria (Nemisys), Thane Brimhall (pennomi), bluecarrot16, Luke Mehl, Benjamin K. Smith (BenCreating), ElizaWy, MuffinElZangano, Durrani, kheftel, Stephen Challener (Redshrike), TheraHedwig, Evert, Pierre Vigier (pvigier), Eliza Wyatt (ElizaWy), Johannes Sj?lund (wulax), Sander Frenken (castelonia), dalonedrau, Lanea Zimmerman (Sharm)</li>
+                                <li>
+                                    Sprites contributed as part of the Liberated Pixel Cup project from OpenGameArt.org: <span><a href="http://opengameart.org/content/lpc-collection" target="_blank"> http://opengameart.org/content/lpc-collection</a></span>
+                                </li>
+                                <li>
+                                    License: Creative Commons Attribution-ShareAlike 3.0 (CC-BY-SA 3.0) <span><a target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/">http://creativecommons.org/licenses/by-sa/3.0/</a></span>
+                                </li>
+                                <li>
+                                    Detailed credits:
+                                </li>
+                                <ul>
+                                    <li>
+                                        <a href="#" onclick="showPopup()">Wizard Sprite</a>
+                                        <div id="popup" class="popup hidden">
+                                            <div class="popup-content">
+                                                <p>Do you want to download the credits?</p>
+                                                <button onclick="downloadCredits('credits/wizard_credits.txt')">Yes</button>
+                                                <button onclick="closePopup()">No</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            Developers
+                        </button>
+                        <div class="accordion-content">
+                            Soham Desai
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <button class="go-home-btn" onclick="switchPage('index.html')"><-- Home</button>
+</body>
+</html>
