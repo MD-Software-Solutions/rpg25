@@ -1,7 +1,16 @@
-# tsGame
+# RPG 25
 
-Welcome to **rpg25**! This is a fun and interactive web-based game built with JavaScript.
+## Currently...
+
+Game is under development. Current features:
+
+* Wizard Sprite - basic movement
 
 ## How to Play
 
-Describe the gameplay here. Include instructions, controls, and objectives for the players.
+Sprite Movement and Attacking
+
+### Wizard
+
+* WASD - movement
+* I - thrust wand
